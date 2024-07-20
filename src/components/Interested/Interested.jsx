@@ -12,8 +12,8 @@ const Interested = () => {
         <img src={Limg9} alt="Event" />
         <div className="contact-info">
           <h3>Contact Us</h3>
-          <p><FaPhoneAlt className="contact-icon phone-icon" /> <span className="phone-number">876543213</span></p>
-          <p><FaEnvelope className="contact-icon email-icon" /> <span className="email-address">abc@gmail.com</span></p>
+          <p><FaPhoneAlt className="contact-icon phone-icon" /> <span className="phone-number">+97142434677/88</span></p>
+          <p><FaEnvelope className="contact-icon email-icon" /> <span className="email-address">info@verve-management.com</span></p>
         </div>
         <img src={Limg8} alt="Event" />
       </div>
