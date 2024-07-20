@@ -1,0 +1,208 @@
+.attend-event-container {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    margin-top: 40px; /* Add space from the top component */
+  }
+  
+  .attend-event-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items from the top */
+  }
+  
+  .attend-event-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .attend-event-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 8%;
+    font-family: 'Arial', sans-serif; /* Ensure the font is applied */
+    position: relative;
+    color: #07244df6;
+  }
+  
+  .attend-event-heading::before,
+  .attend-event-heading::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #07244df6; /* Blue line color */
+    width: 15%; /* Set to half of the available space */
+    top: 50%;
+  }
+  
+  .attend-event-heading::before {
+    left: 0;
+    transform: translateX(-20%);
+  }
+  
+  .attend-event-heading::after {
+    right: 0;
+    transform: translateX(69%);
+  }
+  
+  
+  /* .blue-lines {
+    position: absolute;
+    top: 50%;
+    width: 15%;
+    height: 2px;
+    background-color: #246ed6; 
+  } */
+  
+  .left {
+    left: -15%;
+  }
+  
+  .right {
+    right: -15%;
+  }
+  
+  .attend-event-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: 'sans-serif'; /* Ensure the font is applied */
+
+    color:#5A5A5A;
+    letter-spacing: 1px;
+    margin-left:8%;
+  }
+  
+  .attend-event-image-container {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    margin-left: 8%;
+    
+  }
+  
+  .attend-event-image {
+    width: 90%;
+    height: auto;
+    border-radius: 20px  ;
+    margin-left: 3%;
+    top:79px;
+  }
+  
+  .image-animations .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+  }
+  
+  .image-animations .top-left {
+    top: -10px;
+    left: -10px;
+  }
+  
+  .image-animations .top-right {
+    top: -10px;
+    right: -10px;
+  }
+  
+  .image-animations .bottom-left {
+    bottom: -10px;
+    left: -10px;
+  }
+  
+  .image-animations .bottom-right {
+    bottom: -10px;
+    right: -10px;
+  }
+  
+  .attend-event-full-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: justify;
+    font-family: 'sans-serif'; /* Ensure the font is applied */
+    font-family:  'sans-serif'; 
+    color:#5A5A5A;
+    letter-spacing: 1px;
+    margin-left: 3%;
+    margin-right: 4%;
+  }
+  
+  .attend-event-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .attend-event-list li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'sans-serif'; /* Ensure the font is applied */
+  
+    color:#5A5A5A;
+    letter-spacing: 1px;
+    margin-left:3%;
+    
+  }
+  
+  .bullet-point {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  
+  /* Media Queries */
+  
+  /* Large Devices (Desktops) */
+  @media (max-width: 1200px) {
+    .attend-event-heading {
+      font-size: 1.8rem;
+    }
+    .attend-event-paragraph, .attend-event-full-text, .attend-event-list li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Medium Devices (Tablets) */
+  @media (max-width: 992px) {
+    .attend-event-heading {
+      font-size: 1.6rem;
+    }
+    .attend-event-paragraph, .attend-event-full-text, .attend-event-list li {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Small Devices (Landscape Phones) */
+  @media (max-width: 768px) {
+    .attend-event-heading {
+      font-size: 1.4rem;
+    }
+    .attend-event-paragraph, .attend-event-full-text, .attend-event-list li {
+      font-size: 0.8rem;
+    }
+    .attend-event-content {
+      flex-direction: column;
+    }
+  }
+  
+  /* Extra Small Devices (Portrait Phones) */
+  @media (max-width: 576px) {
+    .attend-event-heading {
+      font-size: 1.2rem;
+    }
+    .attend-event-paragraph, .attend-event-full-text, .attend-event-list li {
+      font-size: 0.75rem;
+    }
+  }
+  

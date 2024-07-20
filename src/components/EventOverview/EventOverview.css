@@ -1,0 +1,187 @@
+.event-overview-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  }
+  
+  .event-overview-part {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust as needed */
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .post-report-button {
+    background-color: rgba(219, 23, 23, 0.96); /* Red background */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transition for lift effect */
+  }
+  
+  .post-report-button:hover {
+    background-color: #c2185b; /* Darker red on hover */
+    transform: translateY(-5px); /* Lift up effect on hover */
+  }
+  
+  .heading {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    font-family: 'Arial', sans-serif; /* Ensure the font is applied */
+    display: inline-block;
+    color: #07244df6;
+  }
+  
+  .heading::before,
+  .heading::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #07244df6; /* Blue line color */
+    width: 40%;
+    top: 50%;
+  }
+  
+  .heading::before {
+    left: -50%;
+    
+    
+  }
+  
+  .heading::after {
+    right: -50%;
+  }
+  
+  .overview-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family:  'sans-serif'; 
+    color:#5A5A5A;
+    letter-spacing: 1px;
+    margin-right:18px;
+  }
+  
+  /* Media Queries */
+  
+  /* Large Devices (Desktops) */
+  @media (max-width: 1200px) {
+    .event-image {
+      max-height: 350px;
+    }
+  
+    .post-report-button {
+      font-size: 1.1rem;
+      padding: 12px 25px;
+    }
+  
+    .heading {
+      font-size: 1.8rem;
+    }
+  
+    .heading::before,
+    .heading::after {
+      height: 2px;
+    }
+  
+    .overview-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Medium Devices (Tablets) */
+  @media (max-width: 992px) {
+    .event-image {
+      max-height: 300px;
+    }
+  
+    .post-report-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .heading {
+      font-size: 1.6rem;
+    }
+  
+    .heading::before,
+    .heading::after {
+      height: 2px;
+    }
+  
+    .overview-text {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Small Devices (Landscape Phones) */
+  @media (max-width: 768px) {
+    .event-image {
+      max-height: 250px;
+    }
+  
+    .post-report-button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  
+    .heading {
+      font-size: 1.4rem;
+    }
+  
+    .heading::before,
+    .heading::after {
+      height: 1.5px;
+    }
+  
+    .overview-text {
+      font-size: 0.8rem;
+    }
+  
+    .event-overview-container {
+      flex-direction: column;
+    }
+  }
+  
+  /* Extra Small Devices (Portrait Phones) */
+  @media (max-width: 576px) {
+    .event-image {
+      max-height: 200px;
+    }
+  
+    .post-report-button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  
+    .heading {
+      font-size: 1.2rem;
+    }
+  
+    .heading::before,
+    .heading::after {
+      height: 1px;
+    }
+  
+    .overview-text {
+      font-size: 0.75rem;
+    }
+  }
+  

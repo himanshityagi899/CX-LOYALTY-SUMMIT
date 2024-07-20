@@ -1,0 +1,90 @@
+.interested-container {
+    /* padding: 40px 20px; */
+    background-color: white; /* White background for the heading */
+    color: black;
+    text-align: center;
+  }
+  
+  .interested-heading {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 60px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .interested-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(to right, #003366, #004080); /* Dark blue gradient background */
+    padding: 20px;
+    /* border-radius: 10px;  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  .interested-content img {
+    width: 20%; /* Adjust width as needed */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-right: 12%;
+    margin-left: 10%;
+  }
+  
+  .contact-info {
+    /* background-color: white; */
+    color:white;
+    /* border-radius: 5px; */
+    padding: 10px;
+    width: 40%; /* Adjust width as needed */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+    margin-right:8%;
+    margin-left: 2%;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+  }
+  
+  .contact-info .contact-icon {
+    margin-right: 20px;
+  }
+  
+  .contact-info .phone-icon, .contact-info .email-icon {
+    color: white;
+  }
+  
+  .contact-info .phone-number, .contact-info .email-address {
+    display: inline-block;
+  }
+  
+  .contact-info .phone-number {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info .email-address {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .interested-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .interested-content img {
+      width: 80%; /* Full width on smaller screens */
+    }
+  
+    .contact-info {
+      width: 90%; /* Full width on smaller screens */
+      margin: 20px 0;
+    }
+  }
+  

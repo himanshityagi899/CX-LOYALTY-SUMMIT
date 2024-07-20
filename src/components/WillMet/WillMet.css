@@ -1,0 +1,172 @@
+.willmet-container {
+    background: linear-gradient(135deg, #083678f0 30%, #6fa0dc 100%); /* Blue background */
+    padding: 40px 20px;
+    color: white;
+  }
+  
+  .willmet-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'sans-serif'; /* Ensure font is applied */
+  }
+  
+  
+  
+
+  .willmet-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .willmet-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust gap for medium-sized rectangles */
+    flex: 1;
+  }
+  
+  .willmet-rectangle {
+    background-color: white;
+    color: black;
+    padding: 12px 25px 12px 25px; /* Adjust padding for medium size */
+    border-radius: 10px; /* Rounded rectangles */
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    margin-left:8%;
+    font-family: 'sans-serif';
+    font-weight: 16%;
+  }
+  
+  .willmet-rectangle:nth-child(1) {
+    animation: show 1s forwards;
+  }
+  
+  .willmet-rectangle:nth-child(2) {
+    animation: show 1s 0.2s forwards;
+  }
+  
+  .willmet-rectangle:nth-child(3) {
+    animation: show 1s 0.4s forwards;
+  }
+  
+  .willmet-rectangle:nth-child(4) {
+    animation: show 1s 0.6s forwards;
+  }
+  
+  .willmet-rectangle:nth-child(5) {
+    animation: show 1s 0.8s forwards;
+  }
+  
+  .willmet-rectangle:nth-child(6) {
+    animation: show 1s 1s forwards;
+  }
+  
+  .willmet-rectangle:nth-child(7) {
+    animation: show 1s 1.2s forwards;
+  }
+  
+  .willmet-rectangle:nth-child(8) {
+    animation: show 1s 1.4s forwards;
+  }
+  
+  .willmet-rectangle:nth-child(9) {
+    animation: show 1s 1.6s forwards;
+  }
+  
+  .willmet-image {
+    width: 100%;
+    max-width: 600px; /* Adjusted for a longer image */
+    height: auto;
+    border-radius: 50% 0 0 50%; /* Fully rounded left side */
+  }
+  
+  @keyframes show {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries */
+  
+  /* Large Devices (Desktops) */
+  @media (max-width: 1200px) {
+    .willmet-heading {
+      font-size: 1.8rem;
+    }
+    
+    .willmet-rectangle {
+      font-size: 0.9rem;
+      padding: 10px 18px; /* Adjust padding */
+    }
+  
+    .willmet-image {
+      max-width: 450px; /* Adjust image width */
+    }
+  }
+  
+  /* Medium Devices (Tablets) */
+  @media (max-width: 992px) {
+    .willmet-heading {
+      font-size: 1.6rem;
+    }
+  
+    .willmet-rectangle {
+      font-size: 0.8rem;
+      padding: 8px 16px; /* Adjust padding */
+    }
+  
+    .willmet-image {
+      max-width: 400px; /* Adjust image width */
+    }
+  }
+  
+  /* Small Devices (Landscape Phones) */
+  @media (max-width: 768px) {
+    .willmet-heading {
+      font-size: 1.4rem;
+    }
+  
+    .willmet-rectangle {
+      font-size: 0.7rem;
+      padding: 6px 14px; /* Adjust padding */
+    }
+  
+    .willmet-image {
+      max-width: 350px; /* Adjust image width */
+    }
+  
+    .willmet-content {
+      flex-direction: column;
+    }
+  }
+  
+  /* Extra Small Devices (Portrait Phones) */
+  @media (max-width: 576px) {
+    .willmet-heading {
+      font-size: 1.2rem;
+    }
+  
+    .willmet-rectangle {
+      font-size: 0.6rem;
+      padding: 5px 12px; /* Adjust padding */
+    }
+  
+    .willmet-image {
+      max-width: 300px; /* Adjust image width */
+    }
+  }
+  

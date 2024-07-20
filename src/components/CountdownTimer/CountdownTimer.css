@@ -1,0 +1,41 @@
+.countdown-timer-container {
+    background-color: rgba(219, 23, 23, 0.96); /* Cherry background */
+    width: 100vw;
+    height: 100px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .countdown-timer {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-family: sans-serif;
+  }
+  
+  .time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: #091f3d;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+  }
+  
+  .time-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .time-label {
+    font-size: 0.75rem;
+  }
+  
+  .separator {
+    color: #091f3d; /* Blue color for the separator */
+    font-size: 2rem;
+  }
+  

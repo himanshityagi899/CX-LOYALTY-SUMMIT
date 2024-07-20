@@ -1,0 +1,111 @@
+.industries-covered-container {
+    display: flex;
+    background-color: #E5E4E2; /* Light grey background */
+    padding: 40px 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+  }
+  
+  .industries-covered-heading-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .industries-covered-heading {
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif; /* Ensure the font is applied */
+    color: #07244df6;
+  }
+  
+  .industries-buttons-container {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-left: 40px; /* Gap from the left side */
+  }
+  
+  .industry-button {
+    background-color: #fff;
+    color: #07244df6;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s; /* Added transition for lift effect */
+    width: calc(25% - 10px); /* Ensure four buttons per line */
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 0.5s forwards; /* Animation for appearing */
+  }
+  
+  .industry-button i {
+    font-size: 1.2rem;
+  }
+  
+  .industry-button:hover {
+    background-color: #003a6c; /* Dark blue background on hover */
+    color: #fff; /* White text on hover */
+    transform: translateY(-10px) scale(1.05); /* Lift up effect on hover */
+  }
+  
+  /* Keyframes for fadeInUp animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries */
+  
+  /* Large Devices (Desktops) */
+  @media (max-width: 1200px) {
+    .industries-covered-heading {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .industries-covered-heading {
+      font-size: 1.6rem;
+    }
+    .industry-button {
+      padding: 12px 15px;
+      font-size: 0.9rem;
+      width: calc(33.33% - 10px); /* Ensure three buttons per line on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .industries-covered-heading {
+      font-size: 1.4rem;
+    }
+    .industry-button {
+      padding: 10px 12px;
+      font-size: 0.8rem;
+      width: calc(50% - 10px); /* Ensure two buttons per line on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .industries-covered-heading {
+      font-size: 1.2rem;
+    }
+    .industry-button {
+      padding: 8px 10px;
+      font-size: 0.7rem;
+      width: 100%; /* Ensure one button per line on smallest screens */
+    }
+  }
+  
